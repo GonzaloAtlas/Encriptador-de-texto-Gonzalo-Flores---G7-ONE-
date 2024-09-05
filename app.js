@@ -27,11 +27,11 @@ function btDesencriptar(){
 
 function btCopiar(){
     let copiarBt = document.getElementById("textoACopiar");
-    textoEncriptador.value= "";
     copiarBt.select();
     copiarBt.setSelectionRange(0,999999);
     navigator.clipboard.writeText(copiarBt.value);
     alert("El texto se copio al portapapeles")
+    textoEncriptador.value= "";
 }
 
 function encriptar(stringEncriptada){
